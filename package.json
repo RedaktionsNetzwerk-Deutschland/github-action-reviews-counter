@@ -1,0 +1,49 @@
+{
+  "name": "github-action-reviews-counter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Collaborator pull request review counter.",
+  "keywords": [
+    "github action",
+    "reviews",
+    "counter"
+  ],
+  "homepage": "https://github.com/jrylan/github-action-reviews-counter#readme",
+  "bugs": {
+    "url": "https://github.com/jrylan/github-action-reviews-counter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrylan/github-action-reviews-counter.git"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "Jeremy Rylan",
+    "email": "jeremyrylan@me.com",
+    "url": "https://github.com/jrylan"
+  },
+  "sideEffects": false,
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js"
+  ],
+  "scripts": {
+    "build": "ncc build src/action.ts"
+  },
+  "dependencies": {
+    "@actions/core": "1.2.4",
+    "@actions/github": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "14.0.13",
+    "@vercel/ncc": "0.24.1",
+    "cspell": "4.0.63",
+    "prettier": "2.0.5",
+    "prettier-plugin-packagejson": "2.2.5",
+    "typescript": "3.9.5"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

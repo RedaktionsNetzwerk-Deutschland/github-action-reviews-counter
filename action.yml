@@ -1,0 +1,25 @@
+name: 'Reviews Counter'
+branding:
+  color: 'green'
+  icon: 'check-circle'
+description: 'Collaborator pull request review counter.'
+runs:
+  main: 'dist/index.js'
+  using: 'node12'
+inputs:
+  repo-token:
+    description: 'GITHUB_TOKEN secret'
+    required: true
+outputs:
+  approved:
+    description: 'Reviews allowing the pull request to merge.'
+  changes_requested:
+    description: 'Reviews blocking the pull request from merging.'
+  commented:
+    description: 'Informational reviews.'
+  dismissed:
+    description: 'Reviews that have been dismissed.'
+  pending:
+    description: 'Reviews that have not yet been submitted.'
+  valid_reviews:
+    description: 'Sum of approved, changes requested and commented'
